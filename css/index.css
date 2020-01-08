@@ -5,52 +5,6 @@ html {
 
 #main {
     box-sizing: border-box;
-}
-
-main {
     display: flex;
 }
 
-.border-menu {
-    display: flex;
-}
-
-.menu {
-    width: 75%;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.example {
-    width: 25%;
-}
-
-.navigation {
-    display: block;
-    /* align-content: center;
-    justify-content: center;
-    align-items: center; */
-    height: 300px;
-    width: 25%;
-}
-
-.content {
-    width: 50%;
-    padding-left: 60px;
-}
-
-aside {
-    width: 25%;
-}
-
-@media (max-width: 500px) {
-    .navigation {
-        height: 100px;
-    }
-}
-
-@media (max-width: 100px) {
-    .navigation {
-        display: none;
-    }
-}
