@@ -39,7 +39,7 @@ body{
     width: 350px;
     float: left;
     height: 650px;
-    background-color: rgb(63, 52, 214);
+    background-color: rgba(139, 131, 255, 0.555);
 }
 
 .MainContent 
@@ -51,7 +51,7 @@ body{
 }
 
 .stopka {
-    background-color: rgb(63, 52, 214);
+    background-color: rgba(139, 131, 255, 0.555);
     display: block;
     height: 5%;
     width: 100%;
@@ -66,12 +66,16 @@ body{
         height:2em;
         line-height:2em;
         text-align:center;
+        border-radius: 5px;
+        background-color: rgb(5, 5, 5);
 }
 .bar a{
-    color: brown;
+    color: rgb(36, 36, 36);
     text-decoration: none;
 }
-.bar a:hover
+.bar a:hover{
+    color: rgb(100, 100, 100);
+}
 
 
     @media (max-width: 1050px) {
