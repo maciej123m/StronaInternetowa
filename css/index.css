@@ -7,4 +7,10 @@ html {
     box-sizing: border-box;
     display: flex;
 }
+.logo {
+    width: ;
+}
 
+.item {
+    border-radius: 25px;
+}
