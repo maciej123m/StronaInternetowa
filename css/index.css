@@ -10,8 +10,7 @@ html {
     align-content: center;
     justify-content: center;
     align-items: center;
-    height: 1050px;
-    width: 1400px;
+    display: flex;
 }
 
 
@@ -29,7 +28,7 @@ body{
     height: 14%;
     width: 100%;
     align-items: center;
-    background-color: Orange;
+    background-color: #000000;
     text-align: center;
     display: flex;
 }
@@ -37,63 +36,44 @@ body{
 .left {
     float: left;
     display: block;
-    width: 22%;
-    height: 81%;
-    background-color: salmon;
+    width: 350px;
+    float: left;
+    height: 650px;
+    background-color: rgb(21, 218, 21);
 }
 
 .MainContent 
 {
-    background-color: slateblue;
-    width: 78%;
+    background-color: #768178;
+    width: 1150px;
     height: 650px;
     display: flex;
 }
 
 .stopka {
-    background-color: blue;
+    background-color: rgb(21, 218, 21);
     display: block;
     height: 5%;
     width: 100%;
     display: flex;
 }
 
-ul {
-    float: left;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    }
-    
-    li a {
-    display: block;
-    float: left;
-    text-align: center;
-    font-size: 1em;
-    width: 200px;
-    text-decoration: none;
-    color: white;
-    background-color: black;
-    padding: 10px 15px;
-    margin: 0px 1px 1px 0px;
-    border: 1px solid red;
-    border-radius: 3px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    box-shadow: 0px 2px 3px gray;
-    -moz-box-shadow: 0px 2px 3px gray;
-    -webkit-box-shadow: 0px 2px 3px gray;
-    position: relative;    
+bar > li{
+        list-style-type:none;
+        padding:0;
+        margin:0;
+        font-size:14px;
+        height:2em;
+        line-height:2em;
+        text-align:center;
+}
+bar a{
+    color: brown;
+}
 
-    }
-    
-    li a:hover {
-    color: white;
-    background: grey;
-    border: 2px solid red;
-    }
-    
-    @media (max-width: 500px) {
-        #main
+
+    @media (max-width: 1050px) {
+        #main {
+            width: 1000px;
+        }
     }
