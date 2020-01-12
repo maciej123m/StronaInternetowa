@@ -7,6 +7,7 @@ html {
 }
 
 #main {
+    display: flex;
     box-sizing: border-box;
     flex-wrap: wrap;
     align-content: center;
@@ -75,17 +76,18 @@ body{
     display: flex;
     border-radius: 20px;
     margin-bottom: 0.5em;
-    padding-left: 5px;
     font-size: medium;
     box-sizing: border-box;
 }
 
 .stopka {
-    background-color:#000080;
+    padding-top: 5px;
+    background-color:#1be577;
     display: block;
     height: 5%;
     width: 100%;
     display: flex;
+    border-radius: 20px;
 }
 
 .navbar > ul{
@@ -117,7 +119,21 @@ body{
 
 
     @media (max-width: 1050px) {
-        #main {
-            width: 1000px;
-        }
+      .logo {
+          width: 750px;
+      }
     }
+
+    @media (max-width: 750px) {
+        .logo {
+            width: 500;
+        }
+      }
+
+    @media (max-width: 500px) {
+      .logo {
+          height: 0px;
+          width: 0px;
+          visibility: hidden;
+      }
+    }  
