@@ -34,7 +34,7 @@ body{
 
 
 .logo {
-    height: 14%;
+    height: 10%;
     width: 100%;
     align-items: center;
     text-align: center;
@@ -45,8 +45,7 @@ body{
 }
 
 .left {
-    float: left;
-    display: block;
+    display: flex;
     width: 20%;
     height: 100%;
     border-right: black;
@@ -56,6 +55,9 @@ body{
     border-style: dashed;
     border-width: 1px;
     margin-bottom: 3px;
+    align-content: top;
+    justify-content: top;
+    align-items: top;
 }
 
 .right {
@@ -86,15 +88,18 @@ body{
     display: flex;
 }
 
-.navbar > li{
-    
+.navbar > ul{
+    list-style-type:none;
     font-size:18px;
     height:2em;
     line-height:2em;
-    text-align:center;
+   
+    
 }
-.navbar > ul{
+.navbar > li{
     list-style-type:none;
+    margin-right: 5px;
+    text-align:center;
 }
 .navbar a{
     color: rgb(36, 36, 36);
@@ -103,9 +108,11 @@ body{
 .navbar a:hover{
     background-color:#fff;
 }
-.navbar >ul:hover{
+.navbar >li:hover{
     background-color:#fff;
     border-radius: 10px;
+    padding: 5px;
+    
 }
 
 
