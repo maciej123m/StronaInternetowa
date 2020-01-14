@@ -14,12 +14,7 @@ html {
 }
 
 body{
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    position: absolute;
+
     line-height:1.5;
 }
 
@@ -34,11 +29,11 @@ body{
 }
 
 .left {
+    background-color: #ececec;
     width: 25%;
     float: left;
     margin-bottom: 3px;
     font-family: 'Roboto', sans-serif;
-
 }
 
 .right {
@@ -90,7 +85,9 @@ article > p{
 }
 
 .navbar {
-    padding-right: 40px;
+    padding:3%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .navbar > ul{
@@ -101,7 +98,7 @@ article > p{
 }
 .navbar > li{
     list-style-type:none;
-    margin-right: 5px;
+    --margin-right: 5px;
     text-align:center;
     padding: 5px;
 }
@@ -118,11 +115,6 @@ article > p{
     padding: 5px;
     
 }
-
-
-    @media (max-width: 1050px) {
-    
-    }
 
     @media (max-width: 850px) {
         .left{
@@ -141,6 +133,10 @@ article > p{
             text-align: center;
             padding-left: 10px;
             padding-right: 10px;
+        }
+        .MainContent{
+            margin: 0;
+            width: 100%;
         }
     }
 
