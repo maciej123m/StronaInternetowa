@@ -2,7 +2,7 @@
 html {
     width: 100%;
     height: 100%;
-    background-color: #fff;
+    background-color: rgb(18, 20, 26) ;
 }
 
 * {
@@ -27,7 +27,8 @@ body{
 }
 
 .left {
-    background-color: #ececec;
+    border-radius: inherit;
+    /* background-color: #273746 ; */
     width: 20%;
     float: left;
     margin-bottom: 3px;
@@ -38,10 +39,12 @@ body{
     width: 80%;
     float: left;
     padding-left: 5px;
+    padding-right: 10px;
 }
 
 .MainContent {
-    --background-color: #ececec;
+    color: rgb(139, 153, 160);
+    background-color: rgb(21, 29, 34); 
     width:1130px;
     height: auto;
     display: flex;
@@ -64,17 +67,19 @@ body{
 
 .header {
     font-family: 'Roboto', sans-serif;
-    font-size: x-large;
+    font-size: 62px;
     width: auto;
     height: auto;
     margin-bottom: 10px;
     font-weight: lighter;
+    display: block;
+    width: 100%;
 }
 
 .border {
     border-width: .5px 0;
     border-style: solid;
-    border-color: rgba(0,0,0,.08) transparent rgba(255,255,255,1);
+    border-color: rgb(73, 81, 85);
 }
 
 article{
@@ -84,7 +89,6 @@ article{
 article > p{
     font-family: 'Open Sans', sans-serif;
     font-size: 1.2em;
-    font-weight: thin;
 }
 
 .navbar {
@@ -105,14 +109,14 @@ article > p{
     padding: 5px;
 }
 .navbar a{
-    color: rgb(36, 36, 36);
+    color: rgb(139, 153, 160);
     text-decoration: none;
     display: block;
     border-radius: 10px;
     padding: 5px;
 }
 .navbar a:hover{
-    background-color:#fff;
+    background-color:rgb(90, 99, 104);
 }
     @media (max-width: 1150px) {
         .MainContent, .logo{
@@ -145,5 +149,11 @@ article > p{
     @media (max-width: 500px) {
       .logo {
           display: none;
+      }
+      .navbar > li {
+        border-width: .5px 0;
+        border-style: solid;
+        border-top: 0;
+        border-color: rgb(73, 81, 85);
       }
     }
