@@ -43,7 +43,7 @@ body{
 }
 
 .MainContent {
-    color: rgb(200, 200, 212);
+    color: rgb(221, 221, 238);
     /*color: rgb(149, 157, 161);*/
     background-color: rgb(21, 29, 34); 
     width:1130px;
@@ -52,12 +52,13 @@ body{
     flex-wrap: wrap;
     border-radius: 15px;
     margin-bottom: 0.5em;
+    padding-right: 10px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .header > h2 {
-    color: rgb(244, 244, 255);
+    color: rgb(231, 231, 243);
 }
 
 
@@ -122,6 +123,15 @@ article > p{
     font-size: 1.2em;
 }
 
+article > ul > li > p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+}
+article > img {
+    width: 881px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
 .navbar {
     padding:3%;
     margin-left: auto;
@@ -140,7 +150,7 @@ article > p{
     padding: 5px;
 }
 .navbar a{
-    color: rgb(209, 209, 219);
+    color: rgb(217, 217, 228);
     text-decoration: none;
     display: block;
     border-radius: 10px;
@@ -152,6 +162,9 @@ article > p{
 @media screen and (max-width: 1150px) {
     .MainContent, .logo{
         width: 825px;
+    }
+    article > img {
+        width: 637px;
     }
 }
 
@@ -178,10 +191,16 @@ article > p{
         margin: 0;
         width: 100%;
     }
+    article > img {
+        width: 480px;
+    }
 }
 
 @media screen and (max-width: 500px) {
     .logo {
+        display: none;
+    }
+    article > img {
         display: none;
     }
     .header {
