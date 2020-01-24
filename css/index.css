@@ -79,13 +79,18 @@ body{
 
 .header {
     font-family: 'Roboto', sans-serif;
-    font-size: 62px;
+    font-size: x-large;
     width: auto;
     height: auto;
     margin-bottom: 10px;
     font-weight: lighter;
     display: block;
     width: 100%;
+}
+
+.header > h2 {
+    margin: 10px;
+    margin-left: 0;
 }
 
 .border {
@@ -150,6 +155,10 @@ article > p{
         text-align: center;
         padding-left: 10px;
         padding-right: 10px;
+    }
+    .backToTop {
+        display: none;
+        visibility: hidden;
     }
     .MainContent{
         margin: 0;
