@@ -1,19 +1,16 @@
 
-html {
-    width: 100%;
-    height: 100%;
-    background-color: rgb(18, 20, 26) ;
-}
-
 * {
     box-sizing: border-box;
   }
 
-#main {
+#box {
     flex-wrap: wrap;
 }
 
 body{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(18, 20, 26) ;
     line-height:1.5;
 }
 
@@ -26,6 +23,8 @@ body{
     margin-right: auto;
 }
 
+
+/*sekcja główna*/
 .left {
     border-radius: inherit;
     /* background-color: #273746 ; */
@@ -57,8 +56,19 @@ body{
     margin-right: auto;
 }
 
-.header > h2 {
-    color: rgb(231, 231, 243);
+.MainContentWhite {
+    color: rgb(36, 36, 36);
+    /*color: rgb(149, 157, 161);*/
+    background-color: rgb(187, 187, 187); 
+    width:1130px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 15px;
+    margin-bottom: 0.5em;
+    padding-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -73,7 +83,14 @@ body{
     border-radius: 10px;
 }
 
+.border {
+    border-width: .5px 0;
+    border-style: solid;
+    border-color: rgb(73, 81, 85);
+}
 
+
+/*header*/
 .header {
     font-family: 'Roboto', sans-serif;
     font-size: x-large;
@@ -90,12 +107,12 @@ body{
     margin-left: 0;
 }
 
-.border {
-    border-width: .5px 0;
-    border-style: solid;
-    border-color: rgb(73, 81, 85);
+.header > h2 {
+    color: rgb(231, 231, 243);
 }
 
+
+/*stopka*/
 footer {
     background-color: rgb(21, 29, 34); 
     width:1130px;
@@ -114,6 +131,9 @@ footer > p {
     font-size: 1em;
     margin-left: 10px;
 }
+
+
+/*artykuł*/
 article{
     padding-bottom: 20px;
 }
@@ -132,6 +152,8 @@ article > img {
     margin-bottom: 15px;
     border-radius: 10px;
 }
+
+/*navbar*/
 .navbar {
     padding:3%;
     margin-left: auto;
@@ -159,14 +181,17 @@ article > img {
 .navbar a:hover{
     background-color:rgb(90, 99, 104);
 }
+
+
 @media screen and (max-width: 1150px) {
-    .MainContent, .logo{
+    .MainContent, .logo, footer{
         width: 825px;
     }
     article > img {
         width: 637px;
     }
 }
+
 
 @media screen and (max-width: 850px) {
     .left,.right{
@@ -187,7 +212,7 @@ article > img {
         display: none;
         visibility: hidden;
     }
-    .MainContent{
+    .MainContent, footer{
         margin: 0;
         width: 100%;
     }
