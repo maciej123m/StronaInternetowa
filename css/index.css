@@ -99,11 +99,13 @@ body{
     height: auto;
     margin-bottom: 10px;
     font-weight: lighter;
-    display: block;
+    display: flex;
     width: 100%;
+    flex-wrap: nowrap;
 }
 
 .header > h2 {
+    width: 1080px;
     margin: 10px;
     margin-left: 0; 
     color: rgb(231, 231, 243);
@@ -116,7 +118,6 @@ footer {
     width:1130px;
     height: auto;
     display: flex;
-    flex-wrap: wrap;
     border-radius: 15px;
     margin-bottom: 0.2em;
     margin-left: auto;
@@ -128,6 +129,12 @@ footer > p {
     font-family: 'Open Sans', sans-serif;
     font-size: 1em;
     margin-left: 10px;
+}
+
+.btn_flex {
+    display: flex;
+    width: 50px;
+    justify-content: flex-end;
 }
 
 .btn_white{
@@ -227,6 +234,7 @@ article > img {
     .left,.right{
         width: 100%;
         height: auto;
+        padding-right: 0;
     }
     .navbar{
         padding-left: 5px;
@@ -237,6 +245,7 @@ article > img {
         text-align: center;
         padding-left: 10px;
         padding-right: 10px;
+        text-align:justify;
     }
     .backToTopwhite, .backToTopblack {
         display: none;
@@ -252,11 +261,16 @@ article > img {
     article > img {
         width: 480px;
     }
+    .btn_white, .btn_black{
+        margin-left: 5px;
+        padding: 5px;
+    }
 }
 
 @media screen and (max-width: 500px) {
+   
     .logo {
-        display: none;
+        width: 98%;
     }
     article > img {
         width: 90%;
@@ -264,7 +278,9 @@ article > img {
         margin-right: auto;
     }
     .header {
-        font-size: 30px;
+        font-size: 15px;
+        text-align: center;
+        margin: 0;
     }
     .navbar > li {
     border-width: .5px 0;
