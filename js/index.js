@@ -1,8 +1,46 @@
+function setCookie(cname, cvalue, exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+    var expires = "expires="+d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+    }
+
+function getCookie(cname) {
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for(var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+        c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+        return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+    }
+
+function checkCookie() {
+    var theme = getCookie("theme");
+    if (theme != "") {
+        if(theme==1) {
+            white()
+        }
+        else {
+            black()
+        }
+    } else {
+        setCookie("theme", 0, 365);
+        checkCookie()
+    }
+}
+
 $(document).ready(function(){
       $((getCookie("theme")>0) ? '.backToTopwhite' : '.backToTopblack').on('click', function () {
           $("html, body").animate({scrollTop: 0}, 400);
       });
   });
+
 $(window).scroll(function(){
     if($(this).scrollTop()>300) $((getCookie("theme")>0) ? '.backToTopwhite' : '.backToTopblack').fadeIn();
     else $((getCookie("theme")>0) ? '.backToTopwhite' : '.backToTopblack').fadeOut();
@@ -70,40 +108,3 @@ function black()
 window.onload = function() {
     this.checkCookie()
  }
-
-
-function setCookie(cname, cvalue, exdays) {
-    var d = new Date();
-    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
-    var expires = "expires="+d.toUTCString();
-    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-    }
-
-function getCookie(cname) {
-    var name = cname + "=";
-    var ca = document.cookie.split(';');
-    for(var i = 0; i < ca.length; i++) {
-        var c = ca[i];
-        while (c.charAt(0) == ' ') {
-        c = c.substring(1);
-        }
-        if (c.indexOf(name) == 0) {
-        return c.substring(name.length, c.length);
-        }
-    }
-    return "";
-    }
-
-function checkCookie() {
-    var theme = getCookie("theme");
-    if (theme != "") {
-        if(theme==1) {
-            white()
-        }
-        else {
-            black()
-        }
-    } else {
-        setCookie("theme", 0, 365);
-    }
-}
