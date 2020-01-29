@@ -16,9 +16,7 @@
     animation: 20s slider infinite;
 }
 .slider > figure > img {
-    width: 1130px;
     float: left;
-    height: 350px;
 }
 @keyframes slider {
     0% {
@@ -49,4 +47,21 @@
         left: 0%;
     }
 
+}
+
+@media screen and (max-width: 1150px) {
+    .slider{
+        width: 825px;
+    }
+    .slider > figure > img{
+        width: 825px;
+    }
+}
+@media screen and (max-width: 850px) {
+    .slider{
+        width: 100%;
+    }
+    .slider > figure > img {
+        width: 25%;
+    }
 }
