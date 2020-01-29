@@ -11,7 +11,7 @@ html{
     height: 100%;
 }
 body{
-    
+    transition: all 0.5s ease;
     background-color: rgb(18, 20, 26) ;
     line-height:1.5;
 }
@@ -44,6 +44,7 @@ body{
 }
 
 .MainContent {
+    transition: all 0.5s ease;
     color: rgb(221, 221, 238);
     /*color: rgb(149, 157, 161);*/
     background-color: rgb(21, 29, 34); 
@@ -110,6 +111,7 @@ body{
 
 /*stopka*/
 footer {
+    transition: all 0.5s ease;
     background-color: rgb(21, 29, 34); 
     width:1130px;
     height: auto;
