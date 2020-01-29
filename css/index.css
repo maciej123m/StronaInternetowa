@@ -59,7 +59,7 @@ body{
 }
 
 
-.backToTop {
+.backToTopblack {
     display: none;
     width: 60px;
     height: 60px;
@@ -67,6 +67,18 @@ body{
     right: 50px;
     bottom: 50px;
     background-image: url("../img/s.png");
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.backToTopwhite {
+    display: none;
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    background-image: url("../img/sw.png");
     border-radius: 10px;
     cursor: pointer;
 }
@@ -121,7 +133,7 @@ footer > p {
     margin-bottom: auto;
     margin-left: 10px;
     padding: 10px;
-    box-shadow:inset 0px 0px 0px 3px #4BABFF;
+    box-shadow:inset 0px 0px 0px 3px rgb(23, 146, 253);
 	background-color:#fff;
 	border-radius:7px;
 	cursor:pointer;
@@ -133,7 +145,6 @@ footer > p {
 }
 
 .btn_black{
-
     margin-top:auto;
     margin-bottom: auto;
     margin-left: 10px;
@@ -225,13 +236,16 @@ article > img {
         padding-left: 10px;
         padding-right: 10px;
     }
-    .backToTop {
+    .backToTopwhite, .backToTopblack {
         display: none;
         visibility: hidden;
     }
     .MainContent, footer{
         margin: 0;
         width: 100%;
+    }
+    footer{
+        margin-top:10px;
     }
     article > img {
         width: 480px;
@@ -243,7 +257,9 @@ article > img {
         display: none;
     }
     article > img {
-        display: none;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
     }
     .header {
         font-size: 30px;

@@ -1,23 +1,16 @@
-
-
-/*function scrollToTop() { 
-    $(window).scrollTop(0); 
-} */
-
 $(document).ready(function(){
-      //$('.backToTop').fadeOut()
-      $(".backToTop").on('click', function () {
+      $((getCookie("theme")>0) ? '.backToTopwhite' : '.backToTopblack').on('click', function () {
           $("html, body").animate({scrollTop: 0}, 400);
       });
   });
-  
 $(window).scroll(function(){
-    if($(this).scrollTop()>300) $('.backToTop').fadeIn();
-    else $('.backToTop').fadeOut();
+    if($(this).scrollTop()>300) $((getCookie("theme")>0) ? '.backToTopwhite' : '.backToTopblack').fadeIn();
+    else $((getCookie("theme")>0) ? '.backToTopwhite' : '.backToTopblack').fadeOut();
 })
 
 function white()
 {
+
     document.body.style.background = "#f3f3f3"
 
     const mainBox = document.getElementById("mainbox")
@@ -36,8 +29,14 @@ function white()
     a[0].style.color = "#000"
 
     document.getElementById("fot").style.background = "#4BABFF"
+
+    let el = document.getElementById( 'bt' );
+    el.className = 'backToTopwhite';
+
     setCookie("theme",1,365)
 
+ 
+    
 }
 
 function black()
@@ -61,6 +60,9 @@ function black()
     a[0].style.color = "#c8c8d4"
 
     document.getElementById("fot").style.background = "#151d22"
+
+    let el = document.getElementById( 'bt' );
+    el.className = 'backToTopblack';
 
     setCookie("theme",0,365)
 }
