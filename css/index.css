@@ -6,10 +6,12 @@
 #box {
     flex-wrap: wrap;
 }
-
-body{
+html{
     width: 100%;
     height: 100%;
+}
+body{
+    
     background-color: rgb(18, 20, 26) ;
     line-height:1.5;
 }
@@ -56,24 +58,9 @@ body{
     margin-right: auto;
 }
 
-.MainContentWhite {
-    color: rgb(36, 36, 36);
-    /*color: rgb(149, 157, 161);*/
-    background-color: rgb(187, 187, 187); 
-    width:1130px;
-    height: auto;
-    display: flex;
-    flex-wrap: wrap;
-    border-radius: 15px;
-    margin-bottom: 0.5em;
-    padding-right: 10px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 
 .backToTop {
-    display: block;
+    display: none;
     width: 60px;
     height: 60px;
     position: fixed;
@@ -81,6 +68,7 @@ body{
     bottom: 50px;
     background-image: url("../img/s.png");
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .border {
@@ -104,13 +92,9 @@ body{
 
 .header > h2 {
     margin: 10px;
-    margin-left: 0;
-}
-
-.header > h2 {
+    margin-left: 0; 
     color: rgb(231, 231, 243);
 }
-
 
 /*stopka*/
 footer {
@@ -132,6 +116,38 @@ footer > p {
     margin-left: 10px;
 }
 
+.btn_white{
+    margin-top:auto;
+    margin-bottom: auto;
+    margin-left: 10px;
+    padding: 10px;
+    box-shadow:inset 0px 0px 0px 3px #4BABFF;
+	background-color:#fff;
+	border-radius:7px;
+	cursor:pointer;
+	color:#000;
+	font-family:Arial;
+	font-size:18px;
+	font-weight:bold;
+    text-decoration:none;
+}
+
+.btn_black{
+
+    margin-top:auto;
+    margin-bottom: auto;
+    margin-left: 10px;
+    padding: 10px;
+    box-shadow:inset 0px 0px 0px 3px #12141a;
+	background-color:#202c33;
+	border-radius:7px;
+	cursor:pointer;
+	color:#fff;
+	font-family:Arial;
+	font-size:18px;
+	font-weight:bold;
+    text-decoration:none;
+}
 
 /*artykuł*/
 article{
@@ -178,6 +194,7 @@ article > img {
     border-radius: 10px;
     padding: 5px;
 }
+
 .navbar a:hover{
     background-color:rgb(90, 99, 104);
 }
