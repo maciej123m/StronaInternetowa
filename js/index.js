@@ -48,7 +48,6 @@ $(window).scroll(function(){
 
 function white()
 {
-
     document.body.style.background = "#f3f3f3"
 
     const mainBox = document.getElementById("mainbox")
@@ -72,9 +71,6 @@ function white()
     el.className = 'backToTopwhite';
 
     setCookie("theme",1,365)
-
- 
-    
 }
 
 function black()
